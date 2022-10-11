@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="text-align: center;">你的位置</view>
+ 
+</view>

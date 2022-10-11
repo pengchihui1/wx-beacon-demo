@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="text-align: center;">設備信息列表</view>
+  <view wx:for="{{beanconList}}"> 
+	    <view >uuid:{{item.uuid}}</view>
+			<view >major:{{item.major}}</view>
+			<view >minor:{{item.minor}}</view> 
+      <view >proximity:{{item.proximity }}</view>
+			<view >accuracy:{{item.accuracy}}</view>
+			<view >rssi:{{item.rssi }}</view> 
+	</view> 
+</view>
