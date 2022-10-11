@@ -3,12 +3,12 @@
 const app = getApp();
 
 // 获取sdk实例
-const brtloc = require('../../libs/brtloc.miniprogram.js');
+const brtloc = require('../../libs/brtmap-2.4.2.js');
 
 // 建筑ID
 const buildingID = 'ZS020227';
 // 有效token
-const token = '填写有效token';
+// const token = '填写有效token';
 
 // 与H5集成开发 理念：
 //   小程序调用 ibeacon扫描功能  通过 userId 唯一标识ID 推送到服务器(socket方式)。  利用浏览器get方式 把userId传送给H5，H5的定位SDK会获取 location_user_id 参数(userId) 去服务器拉取beacons 并实现H5端定位功能。 
@@ -27,7 +27,7 @@ Page({
     let $locate = new brtloc.Location({
       userId,
       buildingID,
-      token
+    //   token
     });
 
     // ready
@@ -39,7 +39,7 @@ Page({
 
         // 分析beacons， 计算定位点
         $locate.beaconAnalysis(res.beacons);
-
+        
       });
 
       //开启 ibeacon扫描
