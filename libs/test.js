@@ -3,7 +3,7 @@
 const app = getApp();
 
 // 获取sdk实例
-const brtloc = require('../../libs/brtloc.miniprogram.js');
+const brtloc = require('../libs/brtmap-2.4.2.js');
 
 // 建筑ID
 const buildingID = 'ZS020227';
@@ -30,7 +30,6 @@ Page({
       // 监听扫描ibeacon
       wx.onBeaconUpdate(res => {
         // console.log('onBeaconUpdate', res.beacons);
-
         // 分析beacons， 计算定位点
         $locate.beaconAnalysis(res.beacons);
 
@@ -41,7 +40,6 @@ Page({
         uuids: $locate.uuids,
         success: res => {}
       });
-
     });
 
 

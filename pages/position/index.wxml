@@ -1,5 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <view style="text-align: center;">你的位置</view>
+  <view style="text-align: center;"><text>室内定位</text></view>
  
 </view>

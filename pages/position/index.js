@@ -21,7 +21,7 @@ Page({
   onLoad: function () {
 
     // 唯一ID
-    let userId = +new Date();
+    let userId = new Date();
 
     // 实例
     let $locate = new brtloc.Location({
@@ -45,7 +45,9 @@ Page({
       //开启 ibeacon扫描
       wx.startBeaconDiscovery({
         uuids: $locate.uuids,
-        success: res => {}
+        success: res => {
+          console.log(res)
+        }
       });
 
     });

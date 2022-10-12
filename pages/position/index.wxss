@@ -1,1 +1,2 @@
 /* pages/position/index.wxss */
+@import "../../styles/brtmap.wxss";
